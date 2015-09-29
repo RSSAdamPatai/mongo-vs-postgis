@@ -8,7 +8,7 @@ node index.js
 Postgres table:
 
 ```
--- Table: city
+-- Database: geo_test Table: city
 
 CREATE TABLE city
 (
