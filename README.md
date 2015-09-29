@@ -12,5 +12,6 @@ sudo -u postgres psql geo_test < query.sql
 
 Export to mongo:
 ```
+mongo geo_test --eval "db.city.createIndex( { coord : "2dsphere" } )"
 mongo geo_test --eval "db.dropDatabase()" && mongoimport --db geo_test --collection city query.json
 ```
